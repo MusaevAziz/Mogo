@@ -277,6 +277,7 @@ z-index: 1;
 
 /* ABOUT */
 .about{
+    margin-top: 80px;
     display: flex;
    justify-content: space-between;
 }
@@ -328,5 +329,5 @@ opacity: 1;
     left: 0;
     z-index: 2;
     transform: translate3d(-0, -50%, 0); /*ИЗУЧИТЬ!*/
-    transition: opacity .1s linear;
+    transition: opacity .2s linear;
 }
