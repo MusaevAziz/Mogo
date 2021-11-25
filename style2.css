@@ -234,11 +234,11 @@ z-index: 1;
 
 }
 
-.section_header{
+.section_header{  /* линия под заголовками */
     
     width: 100%;
     max-width: 950px;
-    margin: 0 auto 40px;
+    margin: 0 auto 50px;
 
     text-align: center;
 
@@ -371,3 +371,35 @@ opacity: 1;
      text-transform: uppercase;
  }
 
+
+ /* SERVICES */
+
+ .services{
+     display: flex;
+ }
+
+ .services_item{
+     flex: 1 1 0;  /*ИЗУЧИТЬ*/
+     padding-left: 85px;
+     padding-right: 35px;
+     position: relative;
+ }
+
+ .services_icon{
+     position: absolute;
+     top: 0;
+     left: 28px;
+     z-index: 1;
+
+ }
+
+ .services_title { 
+     font-size: 14px;
+     color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+ }
+ .services_text{
+     font-size: 15px;
+     color: #999;
+ }
