@@ -387,6 +387,13 @@ opacity: 1;
      display: flex;
  }
 
+ .section--devices{
+     padding-bottom: 0;
+    background: url(devices-bg.jpg) center no-repeat;
+   -webkit-background-size: cover;     /*ИЗУЧИТЬ*/
+    background-size: cover;
+ }
+
  .services_item{
      flex: 1 1 0;  /*ИЗУЧИТЬ*/
      padding-left: 85px;
@@ -413,3 +420,23 @@ opacity: 1;
      color: #999;
  }
 
+
+ /* DEVICES */
+ .devices{
+     width: 100%;
+     max-width: 600px;
+     margin: 0 auto;
+     position: relative;
+ }
+ .devices_item{
+     display: block;
+ }
+
+ .devices_item--iphone{
+     position: absolute;
+     bottom: -80px;
+     right: 0;
+     z-index: 1;
+ }
+
+ 
