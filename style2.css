@@ -247,6 +247,12 @@ z-index: 1;
     background-color: #f8f8f8;
 }
 
+.section--clients{
+    background: #fff url("clients-bg.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+ 
+}
 
 
 
@@ -562,7 +568,8 @@ opacity: 1;
  }
 
  .reviews_item{
-     padding-left: 205px;
+
+     padding-left: 255px; 
      position: relative;
  }
 
@@ -573,6 +580,7 @@ opacity: 1;
      z-index: 1;
 
      border: 2px solid #95e1d3;
+     border-radius: 50%; /*чтобы был круг фото профиля по отзыву*/
  }
 
  .reviews_text{
@@ -675,4 +683,121 @@ opacity: 1;
  .logos{
      display: flex;
      justify-content: space-between;
+     align-items: center;
  }
+
+
+ /* WORKS */
+ .works{
+     display: flex;
+ }
+
+ .works_col{
+     flex: 1 1 0; /*Изучить*/
+ }
+
+ .works_item{
+     position: relative;
+     background: linear-gradient(to bottom, #f38181, #fce38a); /*Изучить*/
+ }
+
+ .works_item:hover .works_img {
+     opacity: .2; 
+
+ }
+ .works_item:hover .works_info{    /*при наводе на картинку покажет текст*/
+     opacity: 1;
+ }
+
+
+ .works_img{
+     max-width: 100%; /*ширина макс 100% тем самым адаптивно делаем картинку*/
+     height: auto;   /*длина авто тем самым адаптивно делаем картинку*/
+     transition: opacity .2s linear;
+     display: block; /* прописали чтоб не было снизу отступа под картинкой*/
+ }
+
+ .works_info{
+     width: 100%;
+     padding: 0 15px;
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     left: 0;
+     z-index: 1;
+
+     transform: translate3d(0,-50%, 0);
+     color: #fff;
+     opacity: 0;   /*скрываем текст*/
+     transition: opacity .2s linear;
+ }
+
+
+
+ .works_title{
+     margin-bottom: 5px;
+     text-transform: uppercase;
+     font-size: 14px;  
+ }
+
+ .works_text{
+     font-size: 15px;
+     font-weight: 300;
+     font-style: italic;
+ }
+
+
+ /* CLIENTS */
+ .clients{
+     margin-top: 70px;
+     display: flex;  /*придает буквам или словам в див запись в строчку */
+     flex-wrap: wrap; /*чтоб наши колонки -client item могли перейти на новую строку*/
+ }
+
+ .clients_item{
+     width: 50%;
+     padding: 0 45px 0 175px;
+     position: relative;
+     margin-bottom: 60px;
+ }
+ .clients_photo{
+     width: 110px;
+     height: 110px;
+
+     border-radius: 50%;
+    position: absolute;
+     top: 0;
+     left: 40px;
+     z-index: 1;
+ }
+
+ .clients_name{
+     margin-bottom: 5px;
+     font-size: 14px;
+     text-transform: uppercase;
+     color: #333;
+
+ }
+ .clients_prof{
+     font-size: 15px;
+     color: #333;
+     font-style: italic;
+     font-weight: 300;
+ }
+
+ .clients_prof:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 15px 0;
+ }
+
+
+.clients_text{
+    font-size: 15px;
+    color: #999;
+
+}
+
